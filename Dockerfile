@@ -13,7 +13,7 @@ ENV ANDROID_HOME=/opt/android-sdk-linux
 ENV PATH ${PATH}:${ANDROID_HOME}/platform-tools/:${ANDROID_NDK_HOME}:${ANDROID_HOME}/ndk-bundle:${ANDROID_HOME}/tools/bin/:/usr/local/apache-maven-${MAVEN_VERSION}/bin
 
 RUN apt-get update && \
-    apt-get install -y file vim build-essential && \
+    apt-get install -y file vim build-essential autoconf automake pkg-config && \
     rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p ${ANDROID_HOME} \
@@ -42,7 +42,7 @@ RUN mkdir -p /out
 
 ADD env.sh /build/env.sh
 ADD build-all.sh /build/build-all.sh 
-
+RUN touch /build/build.sh
 RUN chmod 755 /build/*sh
 
 CMD [ "/build/build-all.sh"]
