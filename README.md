@@ -1,6 +1,6 @@
 # android-cc
 
-This docker image sets up a build environment for cross-compiling to Android.
+This docker image sets up a build environment for cross-compiling to Android as per the [Android Documentation](https://developer.android.com/ndk/guides/other_build_systems).
 
 You should extend this Dockerfile, with something like:
 
