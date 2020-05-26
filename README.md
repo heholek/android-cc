@@ -35,8 +35,8 @@ $ docker run -v $(pwd):/out <your image>
 
 After compilation is complete, you will then have:
 
- - ./arm64-v8a/<your built binary>
- - ./armeabi-v7a/<your built binary>
- - ./x86/<your built binary>
- - ./x86_64/<your built binary>
+ - ./arm64-v8a/\<your built binary\>
+ - ./armeabi-v7a/\<your built binary\>
+ - ./x86/\<your built binary\>
+ - ./x86_64/\<your built binary\>
   
