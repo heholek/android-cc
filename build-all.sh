@@ -21,4 +21,6 @@ for CPU in arm64-v8a armeabi-v7a x86 x86_64; do
 	echo "LD: ${LD}"	
 	echo " "
 
+	/build/build.sh
+
 done

@@ -45,4 +45,4 @@ ADD build-all.sh /build/build-all.sh
 
 RUN chmod 755 /build/*sh
 
-CMD [ "/build/build.sh"]
+CMD [ "/build/build-all.sh"]
