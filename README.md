@@ -5,7 +5,7 @@ This docker image sets up a build environment for cross-compiling to Android as 
 You should extend this Dockerfile, with something like:
 
 ```
-FROM maddox/android-cc
+FROM maddox/android-cc:latest
 
 ADD build.sh /build/build.sh
 ```
